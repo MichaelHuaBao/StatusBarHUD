@@ -102,6 +102,7 @@ static NSTimer *timer_;
 /**
  * 显示正在处理的信息
  */
+//当频繁点击的时候都要停止定时器
 + (void)showLoading:(NSString *)msg
 {
     // 停止定时器
@@ -134,6 +135,7 @@ static NSTimer *timer_;
 /**
  * 隐藏
  */
+//隐藏窗口及其它子控件
 + (void)hide
 {
     [UIView animateWithDuration:XMGAnimationDuration animations:^{
